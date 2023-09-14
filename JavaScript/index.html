@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <script>
+        let val1 =  parseFloat(prompt("Digite o valor 1"));
+        let val2 = parseFloat(prompt("Digite o valor 2"));
+        let resultado = 0
+
+        for(;val2<=0;){
+            val2 = prompt("Digite o valor novamente:");
+
+            if (val2>0){
+                break;
+            }
+        }
+
+        resultado = val1/val2;
+        document.write("Sua divisão é:" + resultado)
+    </script>
+</body>
+</html>
