@@ -6,6 +6,23 @@
     <title>Exercicio 10</title>
 </head>
 <body>
-    
+    <script>
+    const N = parseInt(prompt("Digite um valor para N:"));
+
+    if (isNaN(N) || N <= 0) {
+    document.write("Por favor, insira um valor válido maior que zero.");
+} else {
+    for (let i = 1; i <= N; i++) {
+        document.write(`Tabuada do ${i}:`);
+        
+        for (let j = 1; j <= 10; j++) {
+            const resultado = i * j;
+            document.write(`${i} x ${j} = ${resultado}`);
+        }
+        
+        console.log(); 
+    }
+}
+
 </body>
 </html>
