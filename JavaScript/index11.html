@@ -6,6 +6,28 @@
     <title>Exercicio 11</title>
 </head>
 <body>
-    
+    <script>
+        let dentroIntervalo = 0;
+        let foraIntervalo = 0;
+
+    for (let i = 0; i < 10; i++) {
+    const valor = parseInt(prompt(`Digite o ${i + 1}º valor:`));
+
+    if (!isNaN(valor)) {
+        if (valor >= 24 && valor <= 42) {
+            dentroIntervalo++;
+        } else {
+            foraIntervalo++;
+        }
+    } else {
+        document.write("Valor inválido. Por favor, insira um número válido.");
+        i--; 
+    }
+}
+
+    document.write(`Quantidade de valores dentro do intervalo [24, 42]: ${dentroIntervalo}`);
+    document.write(`Quantidade de valores fora do intervalo [24, 42]: ${foraIntervalo}`);
+
+    </script>
 </body>
 </html>
